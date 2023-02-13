@@ -14,7 +14,7 @@ namespace Enhance
         private int a;
         private int b;
 
-        [Test]
+    
         internal int Add(int a, int b)
         {
             return a + b;
