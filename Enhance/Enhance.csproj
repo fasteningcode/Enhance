@@ -93,7 +93,6 @@
   <ItemGroup>
     <None Include="Features\APITests.feature" />
     <None Include="packages.config" />
-    <None Include="Readme.md" />
     <None Include="Features\UITest.feature" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
