@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Enhance
+namespace Enhance.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,22 @@ namespace Enhance
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("UITest")]
-    public partial class UITestFeature
+    [NUnit.Framework.DescriptionAttribute("APITests")]
+    public partial class APITestsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "UITest.feature"
+#line 1 "APITests.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "UITest", "\tSearch an existing Used Car listing with any relevant details like Keyword, Make" +
-                    ", Model, Body Style", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "APITests", "\tTradeMe Sandbox environment API", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,14 +74,14 @@ namespace Enhance
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search an existing Used Car")]
-        [NUnit.Framework.CategoryAttribute("ui")]
-        public void SearchAnExistingUsedCar()
+        [NUnit.Framework.DescriptionAttribute("Retrieve a list of charities and confirm that St John is included in the list")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public void RetrieveAListOfCharitiesAndConfirmThatStJohnIsIncludedInTheList()
         {
             string[] tagsOfScenario = new string[] {
-                    "ui"};
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search an existing Used Car", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Retrieve a list of charities and confirm that St John is included in the list", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -94,14 +93,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
- testRunner.Given("I opened the browser and navigated to trademe", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I retrieve the charities list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.And("I search an existing user car using reference 3909543812", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 8
- testRunner.Then("I verify the number plate is NRR378, kilometers as 60,378km, body Station Wagon, " +
-                        "seats 7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I verified the St John is included in the list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

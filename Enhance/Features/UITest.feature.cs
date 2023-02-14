@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Enhance
+namespace Enhance.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -35,7 +35,7 @@ namespace Enhance
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "UITest", "\tSearch an existing Used Car listing with any relevant details like Keyword, Make" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UITest", "\tSearch an existing Used Car listing with any relevant details like Keyword, Make" +
                     ", Model, Body Style", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
