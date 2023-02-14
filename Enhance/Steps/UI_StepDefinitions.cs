@@ -45,8 +45,6 @@ namespace Enhance
             Thread.Sleep(3000);
             var np = driver.FindElement(By.XPath("//div[2]//tg-tag[1]//span[1]//div[1]")).Text;            
             Assert.AreEqual(numberPlate, np.Replace("Number plate: \r\n", ""));
-            
-            
         }
 
 
